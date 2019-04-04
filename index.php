@@ -1,3 +1,43 @@
+<?php
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    $errorFound = false;
+    $flavors = $_POST['flavors'];
+//verification
+    //name
+    if($_POST['name'] == ""){
+        $errorFound = true;
+        echo 'ERROR: Missing Name<br>';
+    }
+    //check for unintended values
+    if(sizeof($flavors) > 7){
+        $errorFound = true;
+        echo 'ERROR: Too Many Flavors<br>';
+    }
+    //one check box
+    $valid = false;
+    foreach ($flavors as $key => $value){
+        if(isset($key)){
+            $valid = true;
+        }
+    }
+    if($valid == false){
+        $errorFound = true;
+        echo 'ERROR: Pick a Flavor<br>';
+    }
+    if(!$errorFound){
+
+    }
+}
+/**
+ * Created by PhpStorm.
+ * User: Andrew Harrington
+ * Date: 4/4/2019
+ * Time: 12:44 PM
+ */
+
+
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
