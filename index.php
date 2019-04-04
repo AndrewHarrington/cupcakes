@@ -30,7 +30,7 @@
                                     'tiramisu' => 'Tiramisu');
                 foreach ($flavors as $key => $value) {
                     echo "<li>
-                        <input type=\"checkbox\" name=\"flavor\" id=\"$key\" value=\"$key\">
+                        <input type=\"checkbox\" name=\"flavors[]\" id=\"$key\" value=\"$key\">
                         <label for=\"$key\">$value</label>
                       </li>";
                 }
