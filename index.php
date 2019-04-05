@@ -3,6 +3,7 @@
  * Author: Andrew Harrington
  * Date: 4/4/2019
  * aharrington.greenriverdev.com/328/cupcakes/
+ * Allows the user to order a cupcake
  */
 $flavors = array('grasshopper' => 'The Grasshopper',
     'maple' => 'Whiskey Maple Bacon',
